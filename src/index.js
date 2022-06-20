@@ -47,6 +47,3 @@ liSeafoodElement.addEventListener('click', () => {
 
 getAllData(allBeefURL, typeFoodSelected);
 
-// logo immage create
-const logoImage = new Image();
-logoImage.src = logoBack;
