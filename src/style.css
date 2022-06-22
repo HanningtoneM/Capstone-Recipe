@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background: #45badd;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/bg.jpg');
 }
 
 h5,
@@ -121,7 +121,9 @@ li:hover {
   border: white 2px solid;
   width: 300px;
   background-color: #f4f4f4;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: -8px -8px 30px #888888, 8px 8px 16px lightgray;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .card-food:hover {
@@ -148,6 +150,7 @@ li:hover {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0.2rem;
+  font-size: 20px;
 }
 
 .btn-recipe {
@@ -155,11 +158,18 @@ li:hover {
   border: 1px solid cyan;
   color: black;
   font-weight: bold;
-  padding: 0.1rem 0.4rem;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
   border-radius: 30px;
   margin-bottom: 10px;
   margin-left: 10px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+}
+
+.btn-recipe:hover {
+  transform: scale(1.20);
+  transition: 150ms;
+  box-shadow: 2px 2px 2px 2px lightgray;
 }
 
 .btn-liked {
@@ -167,12 +177,17 @@ li:hover {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  background: white;
+  background: #f4f4f4;
   border: none;
   color: red;
   font-weight: bold;
   font-size: 0.8em;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.btn-liked:hover {
+  transform: scale(1.30);
+  transition: 150ms;
 }
 
 .no-grid {
@@ -208,8 +223,10 @@ li:hover {
   font-size: xx-large;
 }
 
+
+
 .show {
-  animation: fadeIn 250ms;
+  animation: fadeIn 200ms;
 }
 
 .recipe {
@@ -230,7 +247,9 @@ li:hover {
 }
 
 .mesgContent input {
-  padding-right: 45px;
+  padding: 20px;
+  align-items: center;
+  padding-right: 30px;
 }
 
 .mesgContent input,
@@ -239,13 +258,21 @@ li:hover {
   color: #333;
   border-radius: 6px;
   font-size: medium;
+  box-shadow: 4px 4px #888;
+  background-color: lightcyan;
+}
+
+::placeholder {
+  font-family: 'Gentium Plus', serif;
 }
 
 .mesgContent input[type='button'] {
   background-color: lightcyan;
   border: 1px solid #333;
   font-weight: bold;
-  padding: 5px;
+  padding: 6px 10px;
+  box-shadow: 10px 10px 10px 10px lightgray;
+  border-radius: 30px;
 }
 
 textarea:focus,
